@@ -1,0 +1,324 @@
+.main-relatorios-page{
+
+    display: flex;
+    margin: 50px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+
+}
+
+.main-relatorios-page h1{
+
+    color: black;
+    margin-bottom: 30px;
+
+}
+
+.relatorios-btn-editar {
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 8px;
+    color: white;
+    background-color: #442BB3;
+    width: 80px;
+  }
+  
+  .relatorio {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border: 3px solid  #442BB3;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: black;
+
+  }
+  
+  .publicacao>*:not(:last-child) {
+    padding: 0 0 10px 0;
+    color: black;
+  }
+  
+  .div-results {
+    width: 100%;
+    height: 700px;
+    border-color:  #442BB3;
+    border-width: 5px;
+    color: black;
+    padding: 20px;
+
+  }
+  
+  .div-results .feed-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    border-color: #442BB3;
+    padding-bottom: 20px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    color: black;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  
+  .div-buttons {
+    display: flex;
+    justify-content: flex-end;
+    color: #000000;
+  }
+  
+  .div-buttons>* {
+    margin-left: 30px;
+  }
+
+  .relatorio-editar{
+
+    width: 300px;
+
+  }
+
+  .publicar-relatorio{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-30%, -50%);
+    width: 60%;
+    height: 600px;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 4px 39.4px 19px rgba(0, 0, 0, 0.36);
+  }
+
+  .editar-relatorio{
+
+    display: none;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-30%, -50%); 
+    width: 50%; 
+    height: 500px;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    align-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 4px 39.4px 19px rgba(0, 0, 0, 0.36);
+
+  }
+
+  .deletar-relatorio{
+
+    display: none;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-30%, -50%); 
+    width: 50%; 
+    height: 300px;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    align-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 4px 39.4px 19px rgba(0, 0, 0, 0.36);
+
+  }
+
+  .relatorio-btn {
+    width: 30%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(68, 43, 179, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+  .TextoArea{
+
+    padding-left: 10px; 
+    align-content: center;
+    width: 300px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    color: black;
+
+  }
+
+  .TextoAreaE{
+
+    padding-left: 10px; 
+    align-content: center;
+    width: 480px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    color: black;
+
+  }
+
+  .TextoAreaa{
+
+    padding-left: 10px; 
+    align-content: center;
+    width: 70%;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    color: black;
+
+  }
+
+  .cadIA {
+    width: 20%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(68, 43, 179, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.relatorio-nome{
+
+  color: #000000;
+
+
+}
+
+.relatorio-situacao {
+
+  color: #000000;
+
+
+}
+
+.relatorio-titulo {
+
+  color: #000000;
+
+
+}
+
+.relatorio-descricao{
+  color: #000000;
+}
+
+.relatorio-btn-editar{
+
+  width: 20%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: rgba(68, 43, 179, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.relatorio-btn-deletar{
+cursor: pointer;
+  width: 20%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+
+.cancelar-relatorio {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #442BB3;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Editar-func-primeiro-relatorio {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  align-items: center; 
+  justify-content: center; 
+  margin: 10px 0;
+  padding-top: 10px;
+}
+
+.Editar-func-primeiro-relatorio h1, label {
+  color: black;
+}
+
+/*  regular expression
+\* input type password */
+
+.ttt-relatorios h5{
+  color: black;
+}
+
+.Editar-func-primeiro-relatorio p {
+  margin-top: 10px;
+}
+
+.Editar-func-primeiro-relatorio input {
+  width: 70%;
+  height: 30px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.Editar-func-primeiro-relatorio input::placeholder {
+  color: #5e5e5e;
+  font-size: 13px;
+}
+
+.select-func-relatorio {
+  color: black;
+    width: 80%;
+    height: 45px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.select-func-relatorio select{
+  color: black;
+  width: 80%;
+  border-radius: 5px;
+  height: 45px;
+  border: 2px solid #000;
+}

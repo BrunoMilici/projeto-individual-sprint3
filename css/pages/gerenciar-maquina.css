@@ -1,0 +1,538 @@
+
+/* Estilos para a página dashboard */
+
+.page-dash-geren {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    background-color: #e2e2e2;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Barra lateral */
+.nav-dash-geren {
+    background-color: #ffffff;
+    color: white;
+    width: 220px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-dash-logo-geren {
+    margin-bottom: 40px;
+}
+
+.nav-dash-logo-geren img {
+    width: 100%;
+    height: 150px;
+}
+
+.nav-dash-menu-geren {
+    width: 100%;
+    
+}
+
+.nav-dash-list-geren {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-dash-icon-geren {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.maingerenpage {
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 6.8%;
+}
+
+.maingerenpage h1 {
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+.select-geren {
+    position:relative;
+    display: flex;
+    padding-left: 100%;
+    width: 120%;
+}
+
+.select-geren select {
+    border-radius: 10px 10px 0 0;
+    border-color: #ffffff;
+    color: black;
+    width: 120%;
+    height: 40px;
+    display: flex;
+    z-index: auto;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    outline: none;
+    position: relative;
+}
+
+.select-geren option {
+    color: black;
+    font-size: 15px;
+}
+
+.dash-geren {
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+    height: 65%;
+    background-color: rgb(255, 255, 255);
+    padding-right: 20%;
+    padding-top: 2%;
+    border-radius: 20px ;
+    color: black;
+}
+
+.titulos-geren {
+    color: black;
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: 65px 155px 210px 145px 110px 180px 160px;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 13%;
+    height: 10%;
+}
+
+.dados-geren {
+    padding-right: 10%;
+    width: 100%;
+    align-items: baseline;
+    color: black;
+    display: grid;
+    grid-template-columns: 65px 155px 210px 145px 110px 180px 160px;
+    align-items: center;
+    height: 65px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.coluna-geren{
+    display: flex;
+    color: black;
+    width: 200px;
+    height: 10px;
+    margin-left: 40px;
+}
+
+/* classe pai dos botões */
+.botoes-geren {
+    padding-top: 1%;
+    display: flex;
+    gap: 20px;
+}
+
+/* botão editar */
+.edit-geren {
+    width: 20%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* botão cadastro */
+.cad-geren {
+    width: 20%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgba(68, 43, 179, 1);
+    color: white;
+    border: none;
+}
+
+.duvidas-geren {
+    width: 250%;
+    display: flex;
+    padding-left: 102%;
+    margin-right: 20px;
+}
+
+.duvidas-geren a {
+    font-size: 15px;
+    color: rgba(68, 43, 179, 1);
+}
+
+.tupla1-geren{
+    display: flex;
+    color: black;
+    width: 60px;
+}
+
+.dados-geren:hover{
+    background-color: #E3E3E3;
+    color: white;
+}
+
+.geren-dados {
+    flex-direction: column;
+    width: 122%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+.edit-geren, .cad-geren {
+    cursor: pointer;
+}
+
+.Editargeren {
+    display: none;
+    position: fixed; 
+    top: 50%; 
+    left: 45%; 
+    transform: translate(-30%, -50%); 
+    width: 60%; 
+    height: 600px;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 4px 39.4px 19px rgba(0, 0, 0, 0.36);
+}
+
+.Editar-geren-primeiro {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 10px 0;
+    padding-top: 10px;
+}
+
+.Editar-geren-primeiro h1{
+    color: black;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.Editar-geren-primeiro input {
+    margin-bottom: 15px;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.Editar-geren-primeiro img {
+    width: 80%;
+    margin: 0;
+}
+
+.Editar-geren-segundo {
+    flex-direction: row;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5%;
+}
+
+.Editar-geren-confirmudanca, .Editar-geren-botoes {
+    flex: 1; 
+    padding: 10px;
+}
+
+.Editar-geren-confirmudanca label {
+    color: black;
+    font-size: 10px;
+}
+
+.Editar-geren-confirmudanca {
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+    
+
+.line1-geren {
+    width: 100%;
+}
+
+.Editar-geren-botoes {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 5%;
+}
+
+.Editar-geren-segundo .confirmar-geren {
+    border-radius: 40px;
+    background: #442BB3;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+
+.Editar-geren-segundo .cancelar-geren {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #442BB3;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastrar-geren-terceiro .cancelar-geren {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #442BB3;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Editar-geren-botao-delete {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.editar-geren-titulodelet {
+    flex-direction:column;
+    align-items:flex-start;
+    display: flex;
+}
+
+.editar-geren-titulodelet h1 {
+    font-size: 20px;
+    color: black;
+}
+
+
+.Editar-geren-botao-delete .confirmar-geren{
+    border-radius: 40px;
+    background: #442BB3;
+    color: white;
+    width: 240px;
+    height: 40px;
+}
+
+.Editar-geren-botao-delete .excluir-geren{
+    border-radius: 40px;
+    background: #F00;
+    color: white;
+    width: 240px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+.Cadastrargeren {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-30%, -50%);
+    width: 60%;
+    height: 600px;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0px 4px 39.4px 19px rgba(0, 0, 0, 0.36);
+}
+
+.cadastrar-geren-primeiro {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 10px 0;
+    padding-top: 10px;
+    margin-left: 27px;
+}
+
+.cadastrar-geren-primeiro p {
+    color: black;
+}
+
+.cadastrar-geren-primeiro input {
+    margin-bottom: 15px;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.cadastrar-geren-primeiro img {
+    width: 80%;
+    margin: 0;
+}
+
+
+.Cadastrargeren h1 {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 7%;
+}
+
+.cadastrar-geren-segundo {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    justify-content: center; 
+    margin: 10px 0;
+    color: black;
+    gap: 10px;
+    padding-right: 40%;
+}
+
+.cadastrar-geren-segundo label {
+    color: black;
+    
+}
+
+.cadastrar-geren-terceiro {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    margin: 10px 0;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.cadastrar-geren-terceiro .confirmar-geren {
+    border-radius: 40px;
+    background: #442BB3;
+    color: white;
+    width: 200px;
+    height: 40px;
+}
+
+.Editargeren {
+    position: absolute;
+    z-index: auto;
+    display: none;
+}
+
+.linha-geren img{
+    width: 120%;
+}
+
+.confirmar-geren{
+    cursor: pointer;
+}
+
+.cancelar-geren{
+    cursor: pointer;
+}
+
+select option {
+    background-color: white;
+}
+
+select option:hover{
+    background-color: black;
+    color: white;
+}
+
+.titulos-maquina-atribuicao {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.titulos-maquina-atribuicao p {
+    color: black;
+    
+}
+
+.configuracoes-servidores {
+    display: flex;
+    width: 100%;
+    flex-direction:row;
+    margin-bottom: 5%;
+}
+
+.divisorias-titulos-maquinas-1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 70%;
+}
+
+.divisorias-titulos-maquinas-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+    height: 70%;
+    margin-top: 15px;
+}
+
+.divisorias-maquinas-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    height: 70%;
+    margin-top: 20px;
+}
+
+.divisorias-maquinas-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    height: 70%;
+    margin-top: 15px;
+}

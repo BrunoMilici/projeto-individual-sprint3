@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogGuard - Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/partials/SideBar.css">
+    <link rel="stylesheet" href="dash-datacenters.css">
+    <script src="js/sessao.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="./img/logo_vetorizada6.png">
+</head>
+
+<body>
+    <section class="page-dash">
+        <nav id="sidebar">
+            <div id="sidebar_content">
+
+                <li class="side_item" style="cursor: none;">
+                    <a>
+                        <i><img src="img/logo_roxa.png" class="nav-dash-icon" style="height: 90px; width: 90px;"></i>
+                        <span class="item-description">
+                            <b style="color: #442BB3; margin-left: 15px;"> Log Guard </b>
+                        </span>
+                    </a>
+                </li>
+
+                <div id="user">
+                    <p id="user_infos">
+                        <span style="color: black;" class="item-descriptionAtivo"> Olá,
+                            <span style="color: #442BB3;" class="item-description" id="b_usuario">
+                                Jon Doe
+                            </span>
+                        </span>
+                        <span class="item-description " id="cargo_usuario" style="color: #442BB3;">
+                            Lorem Ipsum
+                        </span>
+                    </p>
+                </div>
+
+                <ul id="side_items">
+
+
+                    <li class="side_item ">
+                        <a href="dashboard_ADM.html">
+                            <i> <img src="./img/olho.png" class="nav-dash-icon" style="width: 25px;"> </i>
+                            <span class="item-description">
+                                <b> Visão Geral </b>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side_item">
+                        <a href="relatorios.html">
+                            <i> <img src="./img/icon-cnpj.png" class="nav-dash-icon"> </i>
+                            <span class="item-description">
+                                <b> Relatórios </b>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side_item">
+                        <a href="gerenciar-maquina.html">
+                            <i> <img src="./img/monitor.svg" class="nav-dash-icon"> </i>
+                            <span class="item-description">
+                                <b> Empresas </b>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side_item">
+                        <a href="gerenciar-usuario-func.html">
+                            <i> <img src="./img/icon-man.png" class="nav-dash-icon"> </i>
+                            <span class="item-description">
+                                <b> Usuários </b>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side_item">
+                        <a href="gerenciar-usuario-func.html">
+                            <i> <img src="./img/icon-man.png" class="nav-dash-icon"> </i>
+                            <span class="item-description">
+                                <b> FeedBacks </b>
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li class="side_item active">
+                        <a href="dash_Gerenciamento_Operacao.html">
+                            <i> <img src="img/engrenagem_OperacaoBranco.png" class="nav-dash-icon"> </i>
+                            <span class="item-descriptionAtivo">
+                                <b style="color: aliceblue;"> Operações </b>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="side_item">
+                        <a href="#">
+                            <i> <img src="./img/e-mail.png" class="nav-dash-icon" style="width: 25px;"> </i>
+                            <span class="item-description">
+                                <b> Ajuda </b>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button id="open_btn">
+                    <i> <img src="./img/seta-direita.png" class="nav-dash-icon"> </i>
+                </button>
+            </div>
+
+            <div id="logout">
+                <button id="logout_btn" onclick="sair()">
+                    <i> <img src="img/sair.png" class="nav-dash-icon"> </i>
+                    <span class="item-description">
+                        Sair
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="container_dash">
+            <div class="container_top">
+                <div class="div_filtro_componente_datacenter"> <button class="btn_rede"> REDE </button></div>
+                <div class="div_filtro_componente_datacenter"><button> RAM </button></div>
+                <div class="div_filtro_componente_datacenter"><button> CPU </button></div>
+                <div class="div_filtro_componente_datacenter"><button> DISCO </button></div>
+            </div>
+
+            <div class="container_interno">
+                <div class="container_maior">
+
+                <div class="container_indicadores">
+                    <div class="container_kpi">
+                        <h1> Foi Também </h1>
+                    </div>
+                    
+                    <div class="container_info_servidores">
+                        <h1> Deu Certo </h1>
+                    </div>
+                </div>
+
+                    <div class="graficos">
+                    <div class="primeiro_grafico">
+                        <h1> Deu Certo </h1>
+                    </div>
+                    <div class="segundo_grafico">
+                        <h1> Deu Certo </h1>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="container_menor">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
+<script>
+
+    function fodas() {
+        alert("oi")
+    }
+
+    var teste = 0
+
+    document.getElementById('open_btn').addEventListener('click', function () {
+
+        document.getElementById('sidebar').classList.toggle('open-sidebar');
+        this.classList.toggle('rodar');
+
+        if (teste == 0) {
+            document.getElementById('nomeLog').style.display = "block";
+            teste = 1
+        } else {
+            document.getElementById('nomeLog').style.display = "none";
+            teste = 0
+        }
+
+    });
+
+    function sair() {
+        window.location.href = "index.html";
+    }
+</script>
